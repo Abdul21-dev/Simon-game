@@ -23,13 +23,7 @@ document.addEventListener("keypress", function(){
             btn.classList.remove("flash");
         }, 250);
      }
-    //  function userFlash(btn){
-    //     btn.classList.add("userFlash");
-    //     setTimeout(function(){
-    //      btn.classList.remove("userFlash");
-    //     }, 250);
-    //  }
-
+   
     function levelUp(){
         userSeq = [];
         level++;
