@@ -23,6 +23,27 @@ document.addEventListener("keypress", function(){
             btn.classList.remove("flash");
         }, 250);
      }
+
+     function yellowFlash(btn){
+        btn.classList.add("yellowflash");
+        setTimeout(function(){
+            btn.classList.remove("yellowflash");
+        }, 250);
+     }
+
+     function purpleFlash(btn){
+        btn.classList.add("purpleflash");
+        setTimeout(function(){
+            btn.classList.remove("purpleflash");
+        }, 250);
+     }
+
+     function greenFlash(btn){
+        btn.classList.add("greenflash");
+        setTimeout(function(){
+            btn.classList.remove("greenflash");
+        }, 250);
+     }
    
     function levelUp(){
         userSeq = [];
@@ -53,7 +74,15 @@ document.addEventListener("keypress", function(){
     function btnPress(){
         console.log(this);
         let btn = this;
+        if(btn == document.querySelector(".red")){
         gameFlash(btn);
+        }else if(btn == document.querySelector(".yellow")){
+            yellowFlash(btn);
+            }else if(btn == document.querySelector(".purple")){
+                purpleFlash(btn);
+                }else{
+                    greenFlash(btn);
+                    }
 
         userColor = btn.getAttribute("id");
         userSeq.push(userColor);

@@ -30,3 +30,12 @@ body{
 /* .userFlash{
     background-color: green;
 } */
+ .yellowflash{
+     background-color: aqua;
+ }
+ .purpleflash{
+    background-color: blueviolet;
+ }
+ .greenflash{
+     background-color: black;
+ }
